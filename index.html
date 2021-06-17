@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ситек Сервис</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="shortcut icon" href="./иконка.ico">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- Pixel Fabric clothes icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/pixelfabric-clothes/style.css" />
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	 <!-- Flickity gallery styles -->
+	<link rel="stylesheet" type="text/css" href="css/flickity.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Bottom bar with filter and cart info -->
+	
+	
+	
+	<div class="bar">
+		<div class="filter">
+			<span class="filter__label">Фильтры: </span>
+			<button class="action filter__item filter__item--selected" data-filter="*">Все</button>
+			<button class="action filter__item" data-filter=".jackets"><i class=""></i><span class="action__text">Предстерилизационная очистка</span></button>
+			<button class="action filter__item" data-filter=".shirts"><i class="icon icon--shirt"></i><span class="action__text">Дезкамеры и мойки тележек</span></button>
+			<button class="action filter__item" data-filter=".dresses"><i class="icon icon--dress"></i><span class="action__text">Стерилизация </span></button>
+			<button class="action filter__item" data-filter=".trousers"><i class="icon icon--trousers"></i><span class="action__text">Оснащение операционных</span></button>
+			<button class="action filter__item" data-filter=".shoes"><i class="icon icon--shoe"></i><span class="action__text">Медицинская мебель</span></button>
+		</div>
+		<button class="cart">
+			<i class="cart__icon fa fa-shopping-cart"></i>
+			<span class="text-hidden">Shopping cart</span>
+			<span class="cart__count">0</span>
+		</button>
+	</div>
+
+	<!-- Main view -->
+	<div class="view">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<span>Сохраняя здоровье — сохраняем будущее <span class="bp-icon bp-icon-about" data-content="ООО «Ситек Сервис» является одним из ведущих отечественных поставщиков оборудования для построения современных систем инфекционного контроля в лечебно-профилактических учреждениях (ЛПУ). Компания «Ситек Сервис» работает на рынке России и СНГ с 1996 года. Основное направление деятельности нашей компании – поставка «под ключ» медицинского оборудования для оснащения различных подразделений ЛПУ: центральных стерилизационных отделений, операционных блоков, больничных прачечных, дезинфекционных камер, участков обеззараживания и утилизации медицинских отходов."></span></span>
+			<h1><a href="./index.html"><img src="./images/sitek.png" width="240px" alt=""></a> <span> <a href="#">Ситек Сервис</a></h1>
+		</header>
+		<!-- Grid -->
+		<section class="grid grid--loading">
+			<!-- Loader -->
+			<img class="grid__loader" src="images/grid.svg" width="60" alt="Loader image" />
+			<!-- Grid sizer for a fluid Isotope (Masonry) layout -->
+			<div class="grid__sizer"></div>
+			<!-- Grid items -->
+			<div class="grid__item shirts">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Vision 1300 cart washer/1.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Vision 1300 cart washer</h3>
+					<span class="meta__brand">Для тележек и других медицинских принадлежностей</span>
+					<span class="meta__price">$600</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="images/Больничная палата/1.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/Больничная палата/2.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/Больничная палата/3.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Больничная палата</h3>
+					<span class="meta__brand">Медицинская мебель</span>
+					<span class="meta__price">$4000</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Операционный стол GMAX/1.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Операционный стол GMAX</h3>
+					<span class="meta__brand">Операционные столы</span>
+					<span class="meta__price">$2200</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item dresses">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/STERIS AMSCO Century/1.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">STERIS AMSCO Century</h3>
+					<span class="meta__brand">Паровые стерилизаторы</span>
+					<span class="meta__price">$299</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Операционный стол CMAX/1.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Операционный стол CMAX</h3>
+					<span class="meta__brand">Операционные столы</span>
+					<span class="meta__price">$2200</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item--size-a jackets">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Ультразвуковая моечная машина SISA/1.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="./images/Ультразвуковая моечная машина SISA/2.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Ультразвуковая моечная машина SISA</h3>
+					<span class="meta__brand">Ультразвуковые мойки</span>
+					<span class="meta__price">$999</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Рентгенпрозрачный операционный стол CMAX X-ray/1.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Рентгенпрозрачный операционный стол CMAX X-ray</h3>
+					<span class="meta__brand">Операционные столы</span>
+					<span class="meta__price">$2200</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="images/Дородовая палата/1.jpg" alt="Dummy" /></div>
+					
+					
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Дородовая палата</h3>
+					<span class="meta__brand">Медицинская мебель</span>
+					<span class="meta__price">$4000</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="images/Кабинет врача/1.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/Кабинет врача/2.jpg" alt="Dummy" /></div>
+					
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Кабинет врача</h3>
+					<span class="meta__brand">Медицинская мебель</span>
+					<span class="meta__price">$4000</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item dresses">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/STERIS AMSCO Evolution/2.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">STERIS AMSCO Evolution</h3>
+					<span class="meta__brand">Паровые стерилизаторы</span>
+					<span class="meta__price">$299</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Операционный стол EasyMax/1.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="./images/Операционный стол EasyMax/2.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Операционный стол EasyMax</h3>
+					<span class="meta__brand">Операционные столы</span>
+					<span class="meta__price">$2200</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item jackets">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Аппарат ультразвуковой дезинфекционный SI PCF/1.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="./images/Аппарат ультразвуковой дезинфекционный SI PCF/2.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Аппарат ультразвуковой дезинфекционный SI PCF</h3>
+					<span class="meta__brand">Ультразвуковые мойки</span>
+					<span class="meta__price">$999</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart 1</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="images/Кабинет гинеколога/1.jpg" alt="Dummy" /></div>
+					
+					
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Кабинет гинеколога</h3>
+					<span class="meta__brand">Медицинская мебель</span>
+					<span class="meta__price">$4000</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item--size-a dresses">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/STERIS V-PRO maX/1.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">STERIS V-PRO maX</h3>
+					<span class="meta__brand">Низкотемпературные стерилизаторы</span>
+					<span class="meta__price">$299</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Операционный стол SURGINOX/1.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Операционный стол SURGINOX</h3>
+					<span class="meta__brand">Операционные столы</span>
+					<span class="meta__price">$2200</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="images/Лабораторная мебель/1.jpg" alt="Dummy" /></div>
+					
+					
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Лабораторная мебель</h3>
+					<span class="meta__brand">Медицинская мебель</span>
+					<span class="meta__price">$4000</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item jackets">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Автоматическая ультразвуковая дезинфекционная станция SI Niagra/1.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="./images/Автоматическая ультразвуковая дезинфекционная станция SI Niagra/2.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Автоматическая ультразвуковая дезинфекционная станция SI Niagra</h3>
+					<span class="meta__brand">Ультразвуковые мойки</span>
+					<span class="meta__price">$999</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Мониторы операционные/1.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Мониторы для операционных залов Vividimage</h3>
+					<span class="meta__brand">Мониторы операционные</span>
+					<span class="meta__price">$480</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Операционный свет XLED/1.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Операционный свет XLED</h3>
+					<span class="meta__brand">Хирургический свет</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="images/Операционная/1.jpg" alt="Dummy" /></div>
+					
+					
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Операционная</h3>
+					<span class="meta__brand">Медицинская мебель</span>
+					<span class="meta__price">$4000</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item dresses">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Жидкостной стерилизатор System 1 Express/1.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Жидкостной стерилизатор System 1 Express</h3>
+					<span class="meta__brand">Низкотемпературные стерилизаторы</span>
+					<span class="meta__price">$299</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item--size-a trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Операционные консоли Airport/1.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Операционные консоли Airport</h3>
+					<span class="meta__brand">Консоли</span>
+					<span class="meta__price">$1000</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item jackets">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/STERIS Amsco 2532/2.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="./images/STERIS Amsco 2532/1.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">STERIS Amsco 2532</h3>
+					<span class="meta__brand">Моечные машины</span>
+					<span class="meta__price">$339</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="images/Послеродовая палата/1.jpg" alt="Dummy" /></div>
+					
+					
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Послеродовая палата</h3>
+					<span class="meta__brand">Медицинская мебель</span>
+					<span class="meta__price">$4000</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="images/Анестезиологические консоли/2.jpg"  alt="Dummy"/></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Анестезиологические консоли</h3>
+					<span class="meta__brand">Консоли</span>
+					<span class="meta__price">$1000</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="images/Медицинский пост/1.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/Медицинский пост/2.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/Медицинский пост/3.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Медицинский пост</h3>
+					<span class="meta__brand">Медицинская мебель</span>
+					<span class="meta__price">$4000</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item dresses">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Стерилизатор помещений VHP 1000 ED/Стерилизатор-помещений.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Стерилизатор помещений VHP 1000 ED</h3>
+					<span class="meta__brand">Низкотемпературные стерилизаторы</span>
+					<span class="meta__price">$299</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Для интенсивной терапии/1.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Для интенсивной терапии</h3>
+					<span class="meta__brand">Консоли</span>
+					<span class="meta__price">$1000</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item jackets">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/STERIS Amsco 50525053/1.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="./images/STERIS Amsco 50525053/2.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">STERIS Amsco 5052/5053</h3>
+					<span class="meta__brand">Моечные машины</span>
+					<span class="meta__price">$339</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="images/Процедурный кабинет/1.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/Процедурный кабинет/2.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/Процедурный кабинет/3.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Процедурный кабинет</h3>
+					<span class="meta__brand">Медицинская мебель</span>
+					<span class="meta__price">$4000</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Шкафы с подогревом AMSCO/2.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="./images/Шкафы с подогревом AMSCO/1.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Шкафы с подогревом AMSCO®</h3>
+					<span class="meta__brand">Шкафы с подогревом</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item jackets">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Средства для предстерилизационной очистки медицинских изделий ручным и машинным способом/1.png" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Prolystica Ultra/ PROLYSTICA® ultra concentrate enzymatic cleaner (10L-case)</h3>
+					<span class="meta__brand">Растворы для мойки и дезинфекции</span>
+					<span class="meta__price">$60</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="images/Стоматологический кабинет/1.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/Стоматологический кабинет/2.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/Стоматологический кабинет/3.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Стоматологический кабинет</h3>
+					<span class="meta__brand">Медицинская мебель</span>
+					<span class="meta__price">$4000</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Интеграция операционной Harmony IQ/1.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Интеграция операционной Harmony IQ</h3>
+					<span class="meta__brand">Интегрированная операционная Harmony IQ</span>
+					<span class="meta__price">$50000</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item jackets">
+				<div class="slider">
+					<div class="slider__item"><img src="./images/Средства для предстерилизационной очистки медицинских изделий ручным и машинным способом/1.png" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Prolystica Ultra/ PROLYSTICA® ultra concentrate enzymatic cleaner (2 x 5L - case)</h3>
+					<span class="meta__brand">Растворы для мойки и дезинфекции</span>
+					<span class="meta__price">$88</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+		</section>
+		<!-- /grid-->
+	</div>
+	
+
+	<div class="inf">
+
+
+		<div class="container">
+			<button type="button" class="trigger">ООО «Ситек Сервис» является одним из ведущих отечественных поставщиков оборудования</button>
+			<div class="content">
+				ООО «Ситек Сервис» является одним из ведущих отечественных поставщиков оборудования для построения современных систем инфекционного контроля в лечебно-профилактических учреждениях (ЛПУ). Компания «Ситек Сервис» работает на рынке России и СНГ с 1996 года. Основное направление деятельности нашей компании – поставка «под ключ» медицинского оборудования для оснащения различных подразделений ЛПУ: центральных стерилизационных отделений, операционных блоков, больничных прачечных, дезинфекционных камер, участков обеззараживания и утилизации медицинских отходов.
+				<b>Отличительные особенности компании «Ситек Сервис»
+				<hr>
+				<ul>
+					<li>Активное внедрение инновационной аппаратуры</li>
+					<li>Внедрение передовых методов и технологий</li>
+					<li>Развитая сеть квалифицированных партнеров по продвижению техники</li>
+					<li>Налаженная система логистики и сервиса</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="container">
+			<button type="button" class="trigger">ПЯТЬ ФАКТОВ О КОМАНДЕ</button>
+			<div class="content">
+				<ul>
+					<li>Общая численность сотрудников компании 40 человек</li>
+					<li>Структура компании включает пять департаментов: маркетинг и аналитика, продажи, инженерно-сервисный, логистика, склад.</li>
+					<li>Все наши специалисты имеют большой опыт работы в своих областях, высокую квалификацию и владеют новейшими знаниями, необходимыми в работе.</li>
+					<li>Высокая квалификация сотрудников поддерживается регулярными обучающими тренингами и подтверждена именными сертификатами от производителя.</li>
+					<li>Лучшим подтверждением хорошей репутации нашей компании является долгий стаж сотрудников и наличие трудовых династий. Мы вкладываем лучшее в наших людей и вместе создаём успешное будущее.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div>
+			<P>Добраться до нас:</P>
+			<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8956.457102947517!2d37.3480995!3d55.8606837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x305b2094d2637d22!2z0KHQuNGC0LXQuiDQodC10YDQstC40YEg0J7QntCe!5e0!3m2!1sru!2sru!4v1623882828544!5m2!1sru!2sru" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			
+		</div>
+		
+	</div>
+
+	<!-- /view -->
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
